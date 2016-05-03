@@ -7,6 +7,13 @@ var AppActions = {
 			actionType: AppConstants.SEARCH_TEXT,
 			search: search
 		});
+	},
+
+	receiveResults: function(results){
+		AppDispatcher.handleViewAction({
+			actionType: AppConstants.RECEIVE_RESULTS,
+			results: results
+		});
 	}
 }
 
